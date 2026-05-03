@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link
+		href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+		rel="stylesheet" />
+    <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_header">
+            <a href="../index.html"><span class="nav-logo">Martin.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">Обо мне</a></li>
+                <li><a href="../index.html#skills">Навыки</a></li>
+                <li><a href="../index.html#projects">Проекты</a></li>
+                <li><a href="../index.html#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-hero">
+        <a href="../index.html" class="back-btn">← Вернуться на главную</a>
+        <div class="section-label">03 — все проекты</div>
+        <div class="section-title">Что я создал</div>
+        <p class="page-sub">Все мои проекты — от Telegram-ботов до веб-приложений. Реальный код, реальные задачи.</p>
+    </div>
+
+    <div class="stats-row">
+        <div class="stat-item">
+            <span class="stat-num" id="total-count">0</span>
+            <span class="stat-label">всего проектов</span>
+        </div>
+        <span class="stat-sep">·</span>
+        <div class="stat-item">
+            <span class="stat-num" id="done-count">0</span>
+            <span class="stat-label">завершено</span>
+        </div>
+        <span class="stat-sep">·</span>
+        <div class="stat-item">
+            <span class="stat-num" id="wip-count">0</span>
+            <span class="stat-label">в процессе</span>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="telegram">Telegram</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+    </div>
+
+    <div class="projects-section">
+        <div class="projects-grid" id="grid">
+
+            <a href="pr_anon_messages.html" class="project-card" data-tags="python telegram">
+                <div class="project-header">
+                    <span class="project-icon">🤖</span>
+                    <span class="project-status status-done">завершён</span>
+                </div>
+                <div class="project-name">anon_messages_tg</div>
+                <div class="project-desc">Telegram-бот для анонимной отправки сообщений в канал. Ротация псевдонимов, асинхронное хранилище, middleware aiogram 3.x.</div>
+                <div class="project-tags">
+                    <span class="tag">aiogram 3.x</span>
+                    <span class="tag">aiosqlite</span>
+                    <span class="tag">asyncio</span>
+                </div>
+                <div class="card-footer">
+                    <span class="project-lang">Python</span>
+                    <span class="card-more">Подробнее →</span>
+                </div>
+            </a>
+
+            <a href="pr_encar.html" class="project-card" data-tags="web">
+                <div class="project-header">
+                    <span class="project-icon">💻</span>
+                    <span class="project-status status-done">завершён</span>
+                </div>
+                <div class="project-name">Project Encar</div>
+                <div class="project-desc">Сайт про подбор и доставку автомобилей из-за границы.
+                                            Многостраничный проект с каталогом машин, страницами 
+                                            “о нас” и контактами. Есть акцент на визуал авто, 
+                                            страны поставки и удобную структуру. Чистая верстка 
+                                            на HTML/CSS с адаптивом.</div>
+                <div class="project-tags">
+                    <span class="tag">Html</span>
+                    <span class="tag">Css</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="card-footer">
+                    <span class="project-lang">Html / Css / JS</span>
+                    <span class="card-more">Подробнее →</span>
+                </div>
+            </a>
+
+            <a href="pr_like_i_like.html" class="project-card" data-tags="web">
+                <div class="project-header">
+                    <span class="project-icon">💻</span>
+                    <span class="project-status status-done">завершён</span>
+                </div>
+                <div class="project-name">Project Like I Like</div>
+                <div class="project-desc">Сайт-портфолио с акцентом на дизайн и визуал.
+Страница с работами, новостями и контактами. Сделан в минималистичном стиле с упором на типографику и картинки. Используется HTML/CSS и немного интерактива.</div>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="card-footer">
+                    <span class="project-lang">HTML / CSS / JS</span>
+                    <span class="card-more">Подробнее →</span>
+                </div>
+            </a>
+
+            <a href="pr_miami.html" class="project-card" data-tags="web">
+                <div class="project-header">
+                    <span class="project-icon">💻</span>
+                    <span class="project-status status-done">завершён</span>
+                </div>
+                <div class="project-name">Project Miami</div>
+                <div class="project-desc">Лендинг про недвижимость в Майами.
+Простой и аккуратный одностраничник: красивые карточки домов, отзывы, команда и главный экран с акцентом на стиль. Сделан в процессе изучения верстки — HTML, CSS и немного JavaScript.</div>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="card-footer">
+                    <span class="project-lang">HTML / CSS / JS</span>
+                    <span class="card-more">Подробнее →</span>
+                </div>
+            </a>
+
+            <a href="pr_moxa.html" class="project-card" data-tags="web">
+                <div class="project-header">
+                    <span class="project-icon">💻</span>
+                    <span class="project-status status-done">завершён</span>
+                </div>
+                <div class="project-name">Project Moxa</div>
+                <div class="project-desc">Лендинг для креативного агентства.
+Показывает услуги, портфолио и клиентов. Есть блоки с кейсами (брендинг, веб-дизайн, motion). Сделан как современный одностраничник с анимациями и JS.</div>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="card-footer">
+                    <span class="project-lang">HTML / CSS / JS</span>
+                    <span class="card-more">Подробнее →</span>
+                </div>
+            </a>
+
+            <!--
+            Шаблон для нового проекта — скопируй и заполни:
+
+            <div class="project-card" data-tags="python">
+                <div class="project-header">
+                    <span class="project-icon">🔧</span>
+                    <span class="project-status status-wip">в процессе</span>
+                </div>
+                <div class="project-name">Название</div>
+                <div class="project-desc">Описание проекта...</div>
+                <div class="project-tags">
+                    <span class="tag">тег</span>
+                </div>
+                <div class="card-footer">
+                    <span class="project-lang">Python</span>
+                    <span class="card-more">Подробнее →</span>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+
+    <footer>
+        <span>Сделано Мартином — 2025</span>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

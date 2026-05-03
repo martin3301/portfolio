@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encar — Stewart.dev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav_header">
+        <a href="../index.html"><span class="nav-logo">Martin.dev</span></a>
+        <ul class="nav-links">
+            <li><a href="../../index.html#about">Обо мне</a></li>
+            <li><a href="../../index.html#skills">Навыки</a></li>
+            <li><a href="./portfolio.html">Проекты</a></li>
+            <li><a href="../../index.html#contact">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <a href="portfolio.html" class="back-btn">← Все проекты</a>
+
+    <!-- ── ЗАГОЛОВОК ── -->
+    <div class="project-header">
+        <div class="project-header-left">
+            <div class="project-label">проект</div>
+            <h1 class="project-title">Encar 🚗</h1>
+            <div class="project-meta">
+                <span class="project-status status-done">завершён</span>
+                <span class="project-lang">HTML / CSS / JS</span>
+            </div>
+        </div>
+        <div class="header-btns">
+            <a href="https://github.com/martin3301/project_encar" target="_blank" class="btn btn-primary">
+                🐙 GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- ── СКРИНШОТ ── -->
+    <div class="slider-area">
+        <button class="slider-btn slider-prev">&#8592;</button>
+        <div class="slider-track">
+            <div class="slide active">
+                <img src="././imgs/encar1.png" alt="encar — скриншот 1" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/encar2.png" alt="encar — скриншот 2" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/encar3.png" alt="encar — скриншот 3" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/encar4.png" alt="encar — скриншот 4" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/encar5.png" alt="encar — скриншот 5" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/encar6.png" alt="encar — скриншот 6" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/encar7.png" alt="encar — скриншот 7" />
+            </div>
+        </div>
+        <button class="slider-btn slider-next">&#8594;</button>
+        <div class="slider-dots"></div>
+    </div>
+
+    <!-- ── ТАБЫ ── -->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="desc">Описание</button>
+        <button class="tab-btn" data-tab="stack">Стек</button>
+        <button class="tab-btn" data-tab="learnings">Что изучил</button>
+    </div>
+
+    <!-- TAB: ОПИСАНИЕ -->
+    <div class="tab-content active" id="tab-desc">
+        <p class="desc-text">
+            Многостраничный лендинг для вымышленного сервиса по импорту автомобилей из Кореи (EncarRUS).
+            Учебный проект по вёрстке — сделан по макету с нуля.
+        </p>
+        <p class="desc-text" style="margin-bottom:1.5rem;">Цели проекта:</p>
+        <ul class="goals-list">
+            <li>Сверстать многостраничный сайт с общей навигацией</li>
+            <li>Подключить и настроить слайдер изображений (Slick.js)</li>
+            <li>Реализовать каталог автомобилей в виде карточек</li>
+            <li>Добавить кастомный шрифт иконок и контактную форму</li>
+        </ul>
+    </div>
+
+    <!-- TAB: СТЕК -->
+    <div class="tab-content" id="tab-stack">
+        <div class="stack-grid">
+            <div class="stack-card">
+                <div class="stack-icon">🌐</div>
+                <div>
+                    <div class="stack-name">HTML5</div>
+                    <div class="stack-role">разметка</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">🎨</div>
+                <div>
+                    <div class="stack-name">CSS3</div>
+                    <div class="stack-role">стилизация</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">⚡</div>
+                <div>
+                    <div class="stack-name">JavaScript</div>
+                    <div class="stack-role">интерактивность</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">🔌</div>
+                <div>
+                    <div class="stack-name">jQuery</div>
+                    <div class="stack-role">DOM-манипуляции</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">🎠</div>
+                <div>
+                    <div class="stack-name">Slick.js</div>
+                    <div class="stack-role">слайдер</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">⚙️</div>
+                <div>
+                    <div class="stack-name">Git / GitHub</div>
+                    <div class="stack-role">контроль версий</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB: ЧТО ИЗУЧИЛ -->
+    <div class="tab-content" id="tab-learnings">
+        <div class="learning-grid">
+            <div class="learning-card">
+                <h4><span class="lc-icon">✅</span> Многостраничная архитектура</h4>
+                <p>Организовал несколько HTML-страниц с общей навигацией: главная, о компании, рынок, контакты.</p>
+            </div>
+            <div class="learning-card">
+                <h4><span class="lc-icon">✅</span> Слайдер на Slick.js</h4>
+                <p>Впервые подключил стороннюю JS-библиотеку, разобрался с её настройками и адаптацией под макет.</p>
+            </div>
+            <div class="learning-card">
+                <h4><span class="lc-icon">✅</span> Кастомный шрифт иконок</h4>
+                <p>Подключил icon font через @font-face — практика работы с нестандартными шрифтами и векторными иконками.</p>
+            </div>
+            <div class="learning-card">
+                <h4><span class="lc-icon">✅</span> Коммерческий лендинг</h4>
+                <p>Отработал структуру реального бизнес-сайта: CTA, каталог, форма обратной связи, страница контактов.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <span>Сделано Мартином — 2025</span>
+</footer>
+
+<script src="js/projects.js"></script>
+
+</body>
+</html>

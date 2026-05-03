@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anon_messages_tg — Stewart.dev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav_header">
+        <a href="../index.html"><span class="nav-logo">Martin.dev</span></a>
+        <ul class="nav-links">
+            <li><a href="../../index.html#about">Обо мне</a></li>
+            <li><a href="../../index.html#skills">Навыки</a></li>
+            <li><a href="./portfolio.html">Проекты</a></li>
+            <li><a href="../../index.html#contact">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <a href="portfolio.html" class="back-btn">← Все проекты</a>
+
+    <!-- ── ЗАГОЛОВОК ── -->
+    <div class="project-header">
+        <div class="project-header-left">
+            <div class="project-label">проект</div>
+            <h1 class="project-title">anon_messages_tg 🤖</h1>
+            <div class="project-meta">
+                <span class="project-status status-done">завершён</span>
+                <span class="project-lang">Python</span>
+            </div>
+        </div>
+        <div class="header-btns">
+            <a href="https://github.com/martin3301/anon_messages_tg" target="_blank" class="btn btn-primary">
+                🐙 GitHub
+            </a>
+            <!-- Если есть live demo — раскомментируй:
+            <a href="https://t.me/your_bot" target="_blank" class="btn btn-outline">
+                ✈️ Открыть бота
+            </a>
+            -->
+        </div>
+    </div>
+
+    <!-- ── СКРИНШОТ ── -->
+    <div class="slider-area">
+        <button class="slider-btn slider-prev">&#8592;</button>
+        <div class="slider-track">
+            <div class="slide active">
+                <img src="././imgs/anon/anon1.jpg" alt="anon — скриншот 1" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/anon/anon2.jpg" alt="anon — скриншот 2" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/anon/anon3.jpg" alt="anon — скриншот 3" />
+            </div>
+            <div class="slide">
+                <img src="././imgs/anon/anon4.jpg" alt="anon — скриншот 4" />
+            </div>
+        </div>
+        <button class="slider-btn slider-next">&#8594;</button>
+        <div class="slider-dots"></div>
+    </div>
+
+    <!-- ── ТАБЫ ── -->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="desc">Описание</button>
+        <button class="tab-btn" data-tab="stack">Стек</button>
+        <button class="tab-btn" data-tab="learnings">Что изучил</button>
+    </div>
+
+    <!-- TAB: ОПИСАНИЕ -->
+    <div class="tab-content active" id="tab-desc">
+        <p class="desc-text">
+            (В фотографиях приведено работаюший прототип проекта)
+            <br/>
+            Telegram-бот для анонимной отправки сообщений в канал. Пользователь пишет боту — сообщение появляется
+            в канале от случайного псевдонима. Псевдонимы ротируются, история хранится в SQLite асинхронно.
+        </p>
+        <p class="desc-text" style="margin-bottom:1.5rem;">Цели проекта:</p>
+        <ul class="goals-list">
+            <li>Разобраться с архитектурой aiogram 3.x и middleware</li>
+            <li>Научиться работать с асинхронными базами данных (aiosqlite)</li>
+            <li>Реализовать систему ротации псевдонимов без коллизий</li>
+            <li>Задеплоить бота и убедиться в стабильной работе в продакшене</li>
+        </ul>
+    </div>
+
+    <!-- TAB: СТЕК -->
+    <div class="tab-content" id="tab-stack">
+        <div class="stack-grid">
+            <div class="stack-card">
+                <div class="stack-icon">🐍</div>
+                <div>
+                    <div class="stack-name">Python 3.11</div>
+                    <div class="stack-role">основной язык</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">🤖</div>
+                <div>
+                    <div class="stack-name">aiogram 3.x</div>
+                    <div class="stack-role">Telegram Bot API</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">🗄️</div>
+                <div>
+                    <div class="stack-name">aiosqlite</div>
+                    <div class="stack-role">асинхронная БД</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">⚡</div>
+                <div>
+                    <div class="stack-name">asyncio</div>
+                    <div class="stack-role">асинхронность</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">⚙️</div>
+                <div>
+                    <div class="stack-name">Git / GitHub</div>
+                    <div class="stack-role">контроль версий</div>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-icon">🐧</div>
+                <div>
+                    <div class="stack-name">Linux / CLI</div>
+                    <div class="stack-role">деплой</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB: ЧТО ИЗУЧИЛ -->
+    <div class="tab-content" id="tab-learnings">
+        <div class="learning-grid">
+            <div class="learning-card">
+                <h4><span class="lc-icon">✅</span> Middleware в aiogram 3.x</h4>
+                <p>Научился перехватывать апдейты до хэндлеров — удобно для логирования и фильтрации пользователей.</p>
+            </div>
+            <div class="learning-card">
+                <h4><span class="lc-icon">✅</span> Асинхронная работа с БД</h4>
+                <p>Разобрался с aiosqlite: как открывать соединения, делать запросы без блокировки event loop.</p>
+            </div>
+            <div class="learning-card">
+                <h4><span class="lc-icon">✅</span> Архитектура бота</h4>
+                <p>Разделил проект на роутеры, хэндлеры и сервисный слой — код стал читаемее и проще в поддержке.</p>
+            </div>
+            <div class="learning-card">
+                <h4><span class="lc-icon">✅</span> Деплой на сервер</h4>
+                <p>Запустил бота на Linux-сервере через systemd, настроил автозапуск и логирование.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <span>Сделано Мартином — 2025</span>
+</footer>
+
+<script src="js/projects.js"></script>
+
+</body>
+</html>
