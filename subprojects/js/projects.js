@@ -1,5 +1,10 @@
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.querySelector('.slider-dots');
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+
 tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         tabBtns.forEach(b => b.classList.remove('active'));
@@ -9,8 +14,6 @@ tabBtns.forEach(btn => {
     });
 });
 
-const slides = document.querySelectorAll('.slide');
-const dotsContainer = document.querySelector('.slider-dots');
 let current = 0;
 slides.forEach((_, i) => {
     const dot = document.createElement('div');
@@ -25,6 +28,17 @@ function goTo(n) {
     slides[current].classList.add('active');
     dotsContainer.children[current].classList.add('active');
 }
+burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+});
+
+document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+        burger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+    });
+});
 
 document.querySelector('.slider-prev').addEventListener('click', () => goTo(current - 1));
 document.querySelector('.slider-next').addEventListener('click', () => goTo(current + 1));
