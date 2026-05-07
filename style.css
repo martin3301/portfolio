@@ -107,8 +107,8 @@ nav {
     z-index: 1;
 }
 
-@media(max-width: 767px){
-    .hero{
+@media(max-width: 767px) {
+    .hero {
         padding: 6rem 1.5rem 2rem;
     }
 }
@@ -168,13 +168,15 @@ h1 .role {
     font-size: clamp(1.1rem, 3vw, 2rem);
     margin-top: .3rem
 }
-@media(max-width: 381px){
+
+@media(max-width: 381px) {
     h1 {
         font-size: 1.59rem;
         font-weight: 700;
         margin-bottom: 1rem
     }
-    h1 .role{
+
+    h1 .role {
         font-size: 1rem;
     }
 }
@@ -186,11 +188,13 @@ h1 .role {
     max-width: 540px;
     margin-bottom: 2rem
 }
-@media(max-width: 469px){
-    .hero-desc{
+
+@media(max-width: 469px) {
+    .hero-desc {
         font-size: 0.85rem;
     }
 }
+
 .hero-btns {
     display: flex;
     gap: 1rem;
@@ -241,8 +245,9 @@ h1 .role {
     position: relative;
     z-index: 1
 }
-@media(max-width: 767px){
-    .section{
+
+@media(max-width: 767px) {
+    .section {
         padding: 2rem 1.5rem;
     }
 }
@@ -271,7 +276,7 @@ h1 .role {
 @media(max-width:620px) {
     .about-grid {
         grid-template-columns: 1fr;
-        gap:0.8rem;
+        gap: 0.8rem;
     }
 
     .nav-links {
@@ -305,9 +310,9 @@ h1 .role {
     gap: 1rem
 }
 
-@media(max-width: 767px){
-    .skills-grid{
-        gap:0.5rem;
+@media(max-width: 767px) {
+    .skills-grid {
+        gap: 0.5rem;
     }
 }
 
@@ -363,8 +368,8 @@ h1 .role {
     gap: 1.25rem
 }
 
-@media(max-width: 767px){
-    .projects-grid{
+@media(max-width: 767px) {
+    .projects-grid {
         gap: 0.5rem;
     }
 }
@@ -377,8 +382,8 @@ h1 .role {
     z-index: 1;
 }
 
-@media(max-width: 767px){
-    .projects-section{
+@media(max-width: 767px) {
+    .projects-section {
         padding: 0 1.5rem 6rem;
     }
 }
@@ -638,8 +643,9 @@ footer {
     position: relative;
     z-index: 1
 }
-@media(max-width: 767px){
-    footer{
+
+@media(max-width: 767px) {
+    footer {
         padding: 2.5rem 1.5rem;
     }
 }

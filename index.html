@@ -35,6 +35,15 @@
 		</div>
 	</nav>
 
+	<div class="mobile-menu" id="mobileMenu">
+		<ul>
+			<li><a href="#about" class="mobile-link">Обо мне</a></li>
+			<li><a href="#skills" class="mobile-link">Навыки</a></li>
+			<li><a href="#projects" class="mobile-link">Проекты</a></li>
+			<li><a href="#contact" class="mobile-link">Контакты</a></li>
+		</ul>
+	</div>
+
 	<div class="hero">
 		<div class="hero-tag">Открыт к работе</div>
 		<h1>
@@ -67,10 +76,10 @@
 				<span class="t-comment">// developer.json</span><br />
 				{<br />
 				&nbsp;&nbsp;<span class="t-key">"имя"</span>: <span class="t-str">"Саидакбар Саидов"</span>,<br />
-				&nbsp;&nbsp;<span class="t-key">"языки программирование"</span>: [<span class="t-str">"Python"</span>, <span
-					class="t-str">"JavaScript"</span>],<br />
-				&nbsp;&nbsp;<span class="t-key">"обучение"</span>: [<span class="t-str">"самоучка + онлайн-курсы"</span>, <span
-					class="t-str">"курсы ItStep"</span>],<br />
+				&nbsp;&nbsp;<span class="t-key">"языки программирование"</span>: [<span class="t-str">"Python"</span>,
+				<span class="t-str">"JavaScript"</span>],<br />
+				&nbsp;&nbsp;<span class="t-key">"обучение"</span>: [<span class="t-str">"самоучка +
+					онлайн-курсы"</span>, <span class="t-str">"курсы ItStep"</span>],<br />
 				&nbsp;&nbsp;<span class="t-key">"языки"</span>: [<span class="t-str">"Узбекский"</span>, <span
 					class="t-str">"Русский"</span>, <span class="t-str">"Английский"</span>],<br />
 				&nbsp;&nbsp;<span class="t-key">"готов_к_работе"</span>: <span class="t-bool">true</span>,<br />
@@ -81,7 +90,8 @@
 		<div class="about-grid">
 			<div class="about-card">
 				<h3>Бэкграунд</h3>
-				<p>Изучил Python, веб-технологии и backend-разработку через курсы и практические проекты. Делаю упор на реальные
+				<p>Изучил Python, веб-технологии и backend-разработку через курсы и практические проекты. Делаю упор на
+					реальные
 					задачи и рабочий код.</p>
 			</div>
 			<div class="about-card">
@@ -187,7 +197,8 @@
 					<span class="project-status status-done">завершён</span>
 				</div>
 				<div class="project-name">anon_messages_tg</div>
-				<div class="project-desc">Telegram-бот для анонимной отправки сообщений в канал. Ротация псевдонимов, асинхронное хранилище, middleware aiogram 3.x.</div>
+				<div class="project-desc">Telegram-бот для анонимной отправки сообщений в канал. Ротация псевдонимов,
+					асинхронное хранилище, middleware aiogram 3.x.</div>
 				<div class="project-tags">
 					<span class="tag">aiogram 3.x</span>
 					<span class="tag">aiosqlite</span>
@@ -197,46 +208,47 @@
 					<span class="project-lang">Python</span>
 					<span class="card-more">Подробнее →</span>
 				</div>
-        	</a>
+			</a>
 			<a href="subprojects/pr_encar.html" class="project-card" data-tags="web">
-                <div class="project-header">
-                    <span class="project-icon">🌐</span>
-                    <span class="project-status status-done">завершён</span>
-                </div>
-                <div class="project-name">Project Encar</div>
-                <div class="project-desc">Сайт про подбор и доставку автомобилей из-за границы.
-                                            Многостраничный проект с каталогом машин, страницами 
-                                            “о нас” и контактами. Есть акцент на визуал авто, 
-                                            страны поставки и удобную структуру. Чистая верстка 
-                                            на HTML/CSS с адаптивом.</div>
-                <div class="project-tags">
-                    <span class="tag">Html</span>
-                    <span class="tag">Css</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-                <div class="card-footer">
-                    <span class="project-lang">Html / Css / JS</span>
-                    <span class="card-more">Подробнее →</span>
-                </div>
-            </a>
+				<div class="project-header">
+					<span class="project-icon">🌐</span>
+					<span class="project-status status-done">завершён</span>
+				</div>
+				<div class="project-name">Project Encar</div>
+				<div class="project-desc">Сайт про подбор и доставку автомобилей из-за границы.
+					Многостраничный проект с каталогом машин, страницами
+					“о нас” и контактами. Есть акцент на визуал авто,
+					страны поставки и удобную структуру. Чистая верстка
+					на HTML/CSS с адаптивом.</div>
+				<div class="project-tags">
+					<span class="tag">Html</span>
+					<span class="tag">Css</span>
+					<span class="tag">JavaScript</span>
+				</div>
+				<div class="card-footer">
+					<span class="project-lang">Html / Css / JS</span>
+					<span class="card-more">Подробнее →</span>
+				</div>
+			</a>
 			<a href="subprojects/pr_like_i_like.html" class="project-card" data-tags="web">
-                <div class="project-header">
-                    <span class="project-icon">💻</span>
-                    <span class="project-status status-done">завершён</span>
-                </div>
-                <div class="project-name">Project Like I Like</div>
-                <div class="project-desc">Лендинг про недвижимость в Майами.
-Простой и аккуратный одностраничник: красивые карточки домов, отзывы, команда и главный экран с акцентом на стиль. Сделан в процессе изучения верстки — HTML, CSS и немного JavaScript.</div>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-                <div class="card-footer">
-                    <span class="project-lang">HTML / CSS / JS</span>
-                    <span class="card-more">Подробнее →</span>
-                </div>
-            </a>
+				<div class="project-header">
+					<span class="project-icon">💻</span>
+					<span class="project-status status-done">завершён</span>
+				</div>
+				<div class="project-name">Project Like I Like</div>
+				<div class="project-desc">Лендинг про недвижимость в Майами.
+					Простой и аккуратный одностраничник: красивые карточки домов, отзывы, команда и главный экран с
+					акцентом на стиль. Сделан в процессе изучения верстки — HTML, CSS и немного JavaScript.</div>
+				<div class="project-tags">
+					<span class="tag">HTML</span>
+					<span class="tag">CSS</span>
+					<span class="tag">JavaScript</span>
+				</div>
+				<div class="card-footer">
+					<span class="project-lang">HTML / CSS / JS</span>
+					<span class="card-more">Подробнее →</span>
+				</div>
+			</a>
 		</div>
 		<div class="all_projects"><a href="subprojects/portfolio.html" class="btn btn-outline">показать все</a></div>
 	</div>
@@ -269,8 +281,8 @@
 					<div class="c-val">@Martin3301w</div>
 				</div>
 			</a>
-			<a onclick="navigator.clipboard.writeText('+998507973301'); alert('Номер телефона скопирован!')" target="_blank"
-				class="contact-link">
+			<a onclick="navigator.clipboard.writeText('+998507973301'); alert('Номер телефона скопирован!')"
+				target="_blank" class="contact-link">
 				<span class="contact-icon">📞</span>
 				<div class="contact-info">
 					<div class="c-label">Телефон номер</div>

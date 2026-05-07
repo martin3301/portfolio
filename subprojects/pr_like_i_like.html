@@ -1,171 +1,186 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Like i Like — Martin.dev</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
-	<link rel="manifest" href="./icon/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="styles/projects.css">
 </head>
+
 <body>
 
-<nav>
-    <div class="nav_header">
-        <a href="../index.html"><span class="nav-logo">Martin.dev</span></a>
-        <ul class="nav-links">
-            <li><a href="../#about">Обо мне</a></li>
-            <li><a href="../#skills">Навыки</a></li>
-            <li><a href="./portfolio.html">Проекты</a></li>
-            <li><a href="../#contact">Контакты</a></li>
-        </ul>
-        <button class="burger" id="burger" aria-label="Меню">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</nav>
-
-<div class="container">
-
-    <a href="portfolio.html" class="back-btn">← Все проекты</a>
-
-    <!-- ── ЗАГОЛОВОК ── -->
-    <div class="project-header">
-        <div class="project-header-left">
-            <div class="project-label">проект</div>
-            <h1 class="project-title">Like i Like 🏛️</h1>
-            <div class="project-meta">
-                <span class="project-status status-done">завершён</span>
-                <span class="project-lang">HTML / CSS / JS</span>
-            </div>
+    <nav>
+        <div class="nav_header">
+            <a href="../index.html"><span class="nav-logo">Martin.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="../#about">Обо мне</a></li>
+                <li><a href="../#skills">Навыки</a></li>
+                <li><a href="./portfolio.html">Проекты</a></li>
+                <li><a href="../#contact">Контакты</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div class="header-btns">
-            <a href="https://github.com/martin3301/project_like_i_like" target="_blank" class="btn btn-primary">
-                🐙 GitHub
-            </a>
-        </div>
-    </div>
+    </nav>
 
-    <!-- ── СКРИНШОТ ── -->
-    <div class="slider-area">
-        <button class="slider-btn slider-prev">&#8592;</button>
-        <div class="slider-track">
-            <div class="slide active">
-                <img src="././imgs/like_i_like1.png" alt="like_i_like — скриншот 1" />
-            </div>
-            <div class="slide">
-                <img src="././imgs/like_i_like2.png" alt="like_i_like — скриншот 2" />
-            </div>
-            <div class="slide">
-                <img src="././imgs/like_i_like3.png" alt="like_i_like — скриншот 3" />
-            </div>
-            <div class="slide">
-                <img src="././imgs/like_i_like4.png" alt="like_i_like — скриншот 4" />
-            </div>
-            <div class="slide">
-                <img src="././imgs/like_i_like5.png" alt="like_i_like — скриншот 5" />
-            </div>
-            <div class="slide">
-                <img src="././imgs/like_i_like6.png" alt="like_i_like — скриншот 6" />
-            </div>
-            <div class="slide">
-                <img src="././imgs/like_i_like7.png" alt="like_i_like — скриншот 7" />
-            </div>
-        </div>
-        <button class="slider-btn slider-next">&#8594;</button>
-        <div class="slider-dots"></div>
-    </div>
-
-    <!-- ── ТАБЫ ── -->
-    <div class="tabs">
-        <button class="tab-btn active" data-tab="desc">Описание</button>
-        <button class="tab-btn" data-tab="stack">Стек</button>
-        <button class="tab-btn" data-tab="learnings">Что изучил</button>
-    </div>
-
-    <!-- TAB: ОПИСАНИЕ -->
-    <div class="tab-content active" id="tab-desc">
-        <p class="desc-text">
-            Двухстраничный сайт для архитектурно-дизайнерской студии.
-            Учебный проект по вёрстке — сделан по макету с нуля.
-        </p>
-        <p class="desc-text" style="margin-bottom:1.5rem;">Цели проекта:</p>
-        <ul class="goals-list">
-            <li>Реализовать мультиязычную навигацию (UA / RU / EN)</li>
-            <li>Сверстать полноэкранную hero-секцию с фоновым изображением</li>
-            <li>Добавить секцию услуг с анимацией и сетку портфолио</li>
-            <li>Встроить карту в секцию контактов</li>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" class="mobile-link">Обо мне</a></li>
+            <li><a href="#skills" class="mobile-link">Навыки</a></li>
+            <li><a href="#projects" class="mobile-link">Проекты</a></li>
+            <li><a href="#contact" class="mobile-link">Контакты</a></li>
         </ul>
     </div>
 
-    <!-- TAB: СТЕК -->
-    <div class="tab-content" id="tab-stack">
-        <div class="stack-grid">
-            <div class="stack-card">
-                <div class="stack-icon">🌐</div>
-                <div>
-                    <div class="stack-name">HTML5</div>
-                    <div class="stack-role">разметка</div>
+    <div class="container">
+
+        <a href="portfolio.html" class="back-btn">← Все проекты</a>
+
+        <!-- ── ЗАГОЛОВОК ── -->
+        <div class="project-header">
+            <div class="project-header-left">
+                <div class="project-label">проект</div>
+                <h1 class="project-title">Like i Like 🏛️</h1>
+                <div class="project-meta">
+                    <span class="project-status status-done">завершён</span>
+                    <span class="project-lang">HTML / CSS / JS</span>
                 </div>
             </div>
-            <div class="stack-card">
-                <div class="stack-icon">🎨</div>
-                <div>
-                    <div class="stack-name">CSS3</div>
-                    <div class="stack-role">стилизация</div>
+            <div class="header-btns">
+                <a href="https://github.com/martin3301/project_like_i_like" target="_blank" class="btn btn-primary">
+                    🐙 GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- ── СКРИНШОТ ── -->
+        <div class="slider-area">
+            <button class="slider-btn slider-prev">&#8592;</button>
+            <div class="slider-track">
+                <div class="slide active">
+                    <img src="././imgs/like_i_like1.png" alt="like_i_like — скриншот 1" />
+                </div>
+                <div class="slide">
+                    <img src="././imgs/like_i_like2.png" alt="like_i_like — скриншот 2" />
+                </div>
+                <div class="slide">
+                    <img src="././imgs/like_i_like3.png" alt="like_i_like — скриншот 3" />
+                </div>
+                <div class="slide">
+                    <img src="././imgs/like_i_like4.png" alt="like_i_like — скриншот 4" />
+                </div>
+                <div class="slide">
+                    <img src="././imgs/like_i_like5.png" alt="like_i_like — скриншот 5" />
+                </div>
+                <div class="slide">
+                    <img src="././imgs/like_i_like6.png" alt="like_i_like — скриншот 6" />
+                </div>
+                <div class="slide">
+                    <img src="././imgs/like_i_like7.png" alt="like_i_like — скриншот 7" />
                 </div>
             </div>
-            <div class="stack-card">
-                <div class="stack-icon">⚡</div>
-                <div>
-                    <div class="stack-name">JavaScript</div>
-                    <div class="stack-role">интерактивность</div>
+            <button class="slider-btn slider-next">&#8594;</button>
+            <div class="slider-dots"></div>
+        </div>
+
+        <!-- ── ТАБЫ ── -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="desc">Описание</button>
+            <button class="tab-btn" data-tab="stack">Стек</button>
+            <button class="tab-btn" data-tab="learnings">Что изучил</button>
+        </div>
+
+        <!-- TAB: ОПИСАНИЕ -->
+        <div class="tab-content active" id="tab-desc">
+            <p class="desc-text">
+                Двухстраничный сайт для архитектурно-дизайнерской студии.
+                Учебный проект по вёрстке — сделан по макету с нуля.
+            </p>
+            <p class="desc-text" style="margin-bottom:1.5rem;">Цели проекта:</p>
+            <ul class="goals-list">
+                <li>Реализовать мультиязычную навигацию (UA / RU / EN)</li>
+                <li>Сверстать полноэкранную hero-секцию с фоновым изображением</li>
+                <li>Добавить секцию услуг с анимацией и сетку портфолио</li>
+                <li>Встроить карту в секцию контактов</li>
+            </ul>
+        </div>
+
+        <!-- TAB: СТЕК -->
+        <div class="tab-content" id="tab-stack">
+            <div class="stack-grid">
+                <div class="stack-card">
+                    <div class="stack-icon">🌐</div>
+                    <div>
+                        <div class="stack-name">HTML5</div>
+                        <div class="stack-role">разметка</div>
+                    </div>
                 </div>
-            </div>
-            <div class="stack-card">
-                <div class="stack-icon">⚙️</div>
-                <div>
-                    <div class="stack-name">Git / GitHub</div>
-                    <div class="stack-role">контроль версий</div>
+                <div class="stack-card">
+                    <div class="stack-icon">🎨</div>
+                    <div>
+                        <div class="stack-name">CSS3</div>
+                        <div class="stack-role">стилизация</div>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <div class="stack-icon">⚡</div>
+                    <div>
+                        <div class="stack-name">JavaScript</div>
+                        <div class="stack-role">интерактивность</div>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <div class="stack-icon">⚙️</div>
+                    <div>
+                        <div class="stack-name">Git / GitHub</div>
+                        <div class="stack-role">контроль версий</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- TAB: ЧТО ИЗУЧИЛ -->
-    <div class="tab-content" id="tab-learnings">
-        <div class="learning-grid">
-            <div class="learning-card">
-                <h4><span class="lc-icon">✅</span> Мультиязычная навигация</h4>
-                <p>Реализовал переключение языков (UA / RU / EN) через JavaScript — без фреймворков, вручную.</p>
-            </div>
-            <div class="learning-card">
-                <h4><span class="lc-icon">✅</span> Анимации в секции услуг</h4>
-                <p>Добавил CSS и JS анимации при скролле — элементы появляются при попадании в viewport.</p>
-            </div>
-            <div class="learning-card">
-                <h4><span class="lc-icon">✅</span> Сетка портфолио</h4>
-                <p>Сверстал галерею работ студии на отдельной странице portfolio.html с адаптивной раскладкой.</p>
-            </div>
-            <div class="learning-card">
-                <h4><span class="lc-icon">✅</span> Встроенная карта</h4>
-                <p>Интегрировал карту через iframe в секцию контактов — практика работы со сторонними embed-сервисами.</p>
+        <!-- TAB: ЧТО ИЗУЧИЛ -->
+        <div class="tab-content" id="tab-learnings">
+            <div class="learning-grid">
+                <div class="learning-card">
+                    <h4><span class="lc-icon">✅</span> Мультиязычная навигация</h4>
+                    <p>Реализовал переключение языков (UA / RU / EN) через JavaScript — без фреймворков, вручную.</p>
+                </div>
+                <div class="learning-card">
+                    <h4><span class="lc-icon">✅</span> Анимации в секции услуг</h4>
+                    <p>Добавил CSS и JS анимации при скролле — элементы появляются при попадании в viewport.</p>
+                </div>
+                <div class="learning-card">
+                    <h4><span class="lc-icon">✅</span> Сетка портфолио</h4>
+                    <p>Сверстал галерею работ студии на отдельной странице portfolio.html с адаптивной раскладкой.</p>
+                </div>
+                <div class="learning-card">
+                    <h4><span class="lc-icon">✅</span> Встроенная карта</h4>
+                    <p>Интегрировал карту через iframe в секцию контактов — практика работы со сторонними
+                        embed-сервисами.</p>
+                </div>
             </div>
         </div>
+
     </div>
 
-</div>
+    <footer>
+        <span>Сделано Мартином — 2025</span>
+    </footer>
 
-<footer>
-    <span>Сделано Мартином — 2025</span>
-</footer>
-
-<script src="js/projects.js"></script>
+    <script src="js/projects.js"></script>
 
 </body>
+
 </html>
